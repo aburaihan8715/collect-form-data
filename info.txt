@@ -1,28 +1,28 @@
 ## collect formdata
 
 ### =========references===========
-
 -tutorials
 
-### features/actions
 
+### features/actions
 1. collect formdata using per field state
 2. collect formdata using combined state
 3. collect formdata using field name
 4. collect formdata using field index
 5. collect formdata using ref
 
-### technologies used
 
+### technologies used
 1.  typescript
 2.  react
 
-### completed tasks
 
+### completed tasks
 1. collect formdata using per field state
 2. collect formdata using combined state
 3. collect formdata using field name
 4. collect formdata using field index
 5. collect formdata using ref
+
 
 ### pending tasks

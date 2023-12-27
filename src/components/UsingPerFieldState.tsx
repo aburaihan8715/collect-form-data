@@ -5,10 +5,9 @@ const UsingPerFieldState = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const submitHandler = (e: FormEvent) => {
+  const submitHandler = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!name || !email || !password) return alert("Name, Email, Password are required!");
-
     const newUser = {
       name: name,
       email: email,
@@ -22,7 +21,7 @@ const UsingPerFieldState = () => {
 
   return (
     <div className="border max-w-xl mx-auto p-4 mt-10 rounded">
-      <h1 className="text-center text-3xl font-medium uppercase">collect form data v1</h1>
+      <h1 className="text-center text-3xl font-medium uppercase">collect data using per field state</h1>
       <form onSubmit={submitHandler} className="space-y-3">
         <div className="flex flex-col gap-1">
           <label>Name</label>

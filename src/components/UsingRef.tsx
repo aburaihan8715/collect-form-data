@@ -7,13 +7,14 @@ const UsingRef = () => {
 
   const submitHandler = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.currentTarget;
     const newUser = {
       name: nameRef.current?.value,
       email: emailRef.current?.value,
       password: passwordRef.current?.value,
     };
-
     console.log(newUser);
+    form.reset();
   };
 
   return (
