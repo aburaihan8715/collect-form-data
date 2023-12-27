@@ -7,6 +7,8 @@ const UsingRef = () => {
 
   const submitHandler = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (!nameRef.current?.value || !emailRef.current?.value || !passwordRef.current?.value) return alert("Input should not be empty!");
     const form = e.currentTarget;
     const newUser = {
       name: nameRef.current?.value,
