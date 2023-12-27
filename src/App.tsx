@@ -1,4 +1,6 @@
-import UsingFieldIndex from "./components/UsingFieldIndex";
+// import UsingFieldIndex from "./components/UsingFieldIndex";
+
+import UsingFieldName from "./components/UsingFieldName";
 
 // import UsingCombinedState from "./components/UsingCombinedState";
 
@@ -12,7 +14,8 @@ function App() {
       {/* <UsingRef /> */}
       {/* <UsingPerFieldState /> */}
       {/* <UsingCombinedState /> */}
-      <UsingFieldIndex />
+      {/* <UsingFieldIndex /> */}
+      <UsingFieldName />
     </div>
   );
 }
