@@ -75,10 +75,26 @@ const AllInput = () => {
         <input className="w-full p-2 border rounded text-black" type="month" />
       </div>
 
-      {/* choose file */}
+      {/* file */}
+      <div>
+        <img className="w-full h-[150px] object-cover rounded" src="http://placehold.it/300x150" alt="" />
+      </div>
       <div className="flex flex-col gap-1">
-        <label htmlFor="">Choose file</label>
-        <input className="w-full p-2 border rounded text-black" type="file" />
+        <label className="w-full p-2 border rounded bg-slate-50 text-black text-center" htmlFor="image">
+          Add image
+        </label>
+
+        <input id="image" name="image" className="hidden" type="file" />
+      </div>
+      {/* options */}
+      <div className="flex flex-col gap-1">
+        <label htmlFor="country">Select country</label>
+        <select className="w-full p-2 border rounded text-black" name="country" id="country">
+          <option value="">Select country...</option>
+          <option value="Bangladesh">Bangladesh</option>
+          <option value="India">India</option>
+          <option value="Pakistan">Pakistan</option>
+        </select>
       </div>
 
       {/* date and time */}
